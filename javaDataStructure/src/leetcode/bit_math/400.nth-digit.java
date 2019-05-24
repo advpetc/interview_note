@@ -1,0 +1,25 @@
+class Solution {
+    /**
+     *
+     10 -- 99: 90 * 2 = 180
+11: 
+n = 11 - 9 = 2;
+len = 3;
+count = 90
+start = 10
+     */
+    public int findNthDigit(int n) {
+        int len = 1;
+        long count = 9;
+        int start = 1;
+        while (n > len * count) {
+            n -= len * count; 
+            len += 1;
+            count *= 10;
+            start *= 10;
+        }
+        start += (n - 1) / len;
+        String s = Integer.toString(start);
+        return s.charAt((n - 1) % len) - '0';
+    }
+}
