@@ -5,7 +5,7 @@ class Solution {
             int start = 0, end = nums.size() - 1;
             int index = 0;
             while (index <= end) {
-                if (nums[index] == 0) 
+                if (nAll Nodes Distance K in Binary Treeums[index] == 0) 
                     swap(nums[index++], nums[start++]);
                 else if (nums[index] == 1)
                     index++;

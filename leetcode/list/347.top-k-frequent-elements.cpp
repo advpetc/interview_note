@@ -6,7 +6,7 @@ class Solution {
             }
 
             auto comp = [](const pair<int, int>& left, const pair<int, int>& right) {
-                return left.second < right.second; 
+                return left.second < right.second;
             };
 
             priority_queue<pair<int, int>, vector<pair<int, int>>, decltype(comp)> pq(comp);
@@ -19,7 +19,6 @@ class Solution {
             for (auto pair : map) {
                 pq.push(pair);
             }
-            
             vector<int> ret;
 
             while (ret.size() != k) {

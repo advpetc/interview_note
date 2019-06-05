@@ -6,7 +6,7 @@ class Solution {
             for (int i = 0; i < words.size(); ++i) {
                 if (words[i] == word1) {
                     w1 = i; 
-                } 
+                }
 
                 if (words[i] == word2) {
                     if (word1 == word2) {
