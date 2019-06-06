@@ -52,7 +52,7 @@ public:
 
     /******************************************************************************
      * Function:
-     * Description:
+     * Description: compare cnt with k, find the correct k
      * Where:
      * Return:
      * Error:
